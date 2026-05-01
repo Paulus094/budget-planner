@@ -33,7 +33,7 @@ def render_history_chart(user_id: int) -> None:
 
     with ui.card().classes("w-full"):
         ui.label("Verlauf (letzte 12 Monate)").classes("text-base font-bold text-gray-700 mb-2")
-        ui.chart(
+        ui.highchart(
             {
                 "chart": {"type": "line"},
                 "title": {"text": ""},
